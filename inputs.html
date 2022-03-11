@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <center>
+    <label for="site-search">Search the site:</label>
+    <input type="search" id="site-search" name="q">
+    <button>Search</button>
+  </center>
+  <table>
+    <label for="email">Entrez votre email N'Guédé.com:</label>
+    <input type="email" id="email" pattern=".+@N'Guédé\.com" size="30" required>
+  </table>
+  <table>
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+    </div>
+    <div>
+      <label for="pass">Password (8 characters minimum):</label>
+      <input type="password" id="pass" name="password" minlength="8" required>
+    </div>
+    <input type="submit" value="Sign in">
+  </table>
+  <table>
+    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+  </table>
+  <table>
+    <label for="start">Start date:</label>
+    <input type="date" id="start" name="trip-start" value="2022-03-11" min="2018-01-01" max="2018-12-31">
+  </table>
+  <p>Select a maintenance drone:</p>
+  <div>
+    <input type="radio" id="Nieztsche" name="drone" value="Nieztsche" checked>
+    <label for="Nieztsche">Nieztsche</label>
+  </div>
+  <div>
+    <input type="radio" id="Hegel" name="drone" value="Hegel">
+    <label for="Hegel">Hegel</label>
+  </div>
+  <div>
+    <input type="radio" id="Kant" name="drone" value="Kant">
+    <label for="Kant">Kant</label>
+  </div>
+  <p>Audio settings:</p>
+<div>
+  <input type="range" id="volume" name="volume"
+         min="0" max="11">
+  <label for="volume">Volume</label>
+</div>
+<div>
+  <input type="range" id="cowbell" name="cowbell"
+         min="0" max="100" value="90" step="10">
+  <label for="cowbell">Cowbell</label>
+</div>
+</body>
+</html>
